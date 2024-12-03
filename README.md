@@ -1,15 +1,18 @@
 # Factor Analysis Tool
 
 ## Project Overview
-The Factor Analysis Tool is designed to analyze stock performance using various financial factors, such as Market Factor, Size Factor, Value Factor, Rate of Change (ROC), and Volume Ratio. This tool offers both single-factor and multi-factor analysis, including the Fama-French three-factor model.
+The **Advanced Stock Analysis Tool** evaluates stock performance using key financial factors, such as **Market Influence**, **Firm Size**, **Debt Ratio**, **Price Momentum**, **Turnover Ratio**, **Liquidity Factor**, and **Volatility Factor**. This tool provides both single-factor and multi-factor analysis, offering deep insights into stock behaviors and trends.
 
 ## Features
-1. Query stock closing price data.
-2. Retrieve detailed stock data, including turnover rate, market cap, and liabilities.
-3. Perform single or multiple-factor analysis:
-   - Single Factor Analysis: Choose one factor for regression analysis.
-   - Multi-Factor Analysis: Use Fama-French three-factor model or custom factor combinations.
-4. Exit the program.
+1. **View Historical Closing Prices**:
+   - Retrieve and save the historical closing prices of a stock.
+2. **Retrieve Detailed Stock Data**:
+   - Access comprehensive metrics such as turnover rate, market value, and total debt.
+3. **Perform Factor Analysis**:
+   - **Single-Factor Analysis**: Choose a specific factor to analyze its relationship with stock performance.
+   - **Multi-Factor Analysis**: Combine multiple factors for a holistic analysis.
+4. **Exit**:
+   - Terminate the program.
 
 ## How to Use
 ### Prerequisites
@@ -19,7 +22,7 @@ The Factor Analysis Tool is designed to analyze stock performance using various 
 ### Running the Program
 1. Clone this repository:
    ```
-   git clone <repository_url>
+   git clone 
    ```
 2. Navigate to the project directory:
    ```
@@ -36,18 +39,23 @@ The Factor Analysis Tool is designed to analyze stock performance using various 
 
 ### Example Usage
 #### Single Factor Analysis
-1. Select Option `3` in the menu.
-2. Enter a valid NASDAQ 100 stock code.
-3. Choose `single` analysis and select the desired factor:
-   - Market Factor
-   - Size Factor
-   - Value Factor
-   - ROC
-   - Volume Ratio
+Run the program and select Option 3 from the menu.
+Enter a valid stock symbol (e.g., AMZN.O).
+Choose Single-Factor Analysis and select a factor from the list:
+Market Influence
+Firm Size
+Debt Ratio
+Price Momentum
+Turnover Ratio
+Liquidity Factor
+Volatility Factor
+Multi-Factor Analysis
+Select Multi-Factor Analysis from the menu.
+Choose multiple factors by entering their corresponding numbers separated by spaces.
 
 #### Multi-Factor Analysis
-1. Select the `Fama-French three-factor model` or `custom factors`.
-2. Provide valid factors for analysis.
+Select Multi-Factor Analysis from the menu.
+Choose multiple factors by entering their corresponding numbers separated by spaces.
 
 ## Required Python Packages
 - `pandas`
@@ -64,11 +72,10 @@ pip install pandas numpy statsmodels matplotlib networkx
 ## Repository Structure
 ```
 .
-├── FactorAnalysisTool.py      # Main program file
-├── DataProcessingUtils.py     # Data preprocessing utilities
-├── FactorComputation.py       # Factor calculation functions
-├── StatisticalModeling.py     # Statistical analysis and visualization
-├── README.md                  # Project instructions
-└── Data files (*.csv)         # Required stock data
+├── FactorAnalysisTool.py                 
+├── FinancialAnalysisToolkit.py
+├── README.md                  
+└── Data files (*.csv)         
+
 ```
 
